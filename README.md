@@ -5,7 +5,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## 🚀 Live Demo
-Deploy via GitHub Pages no server needed!
+[KLIK DISINI BOI](https://agusadhitama.github.io/ITCommand/)
 
 ## ✨ Features
 
