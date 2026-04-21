@@ -14,7 +14,7 @@ function renderDashboard() {
 
   page.innerHTML = `
     <div style="margin-bottom:1.5rem">
-      <h1 style="font-size:1.4rem;font-weight:900;color:var(--text-1)">Good ${getGreeting()}, <span style="color:var(--accent)">${name}</span> 👋</h1>
+      <h1 style="font-size:1.4rem;font-weight:900;color:var(--text-1)">Good ${getGreeting()}, <span style="color:var(--accent)">${name}</span> 👋🏽</h1>
       <p style="color:var(--text-3);font-size:0.82rem;font-family:var(--font-mono)">${new Date().toDateString()} - ${lvl.title}</p>
     </div>
 
