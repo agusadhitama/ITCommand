@@ -44,13 +44,6 @@ ITCommand/
     └── profile.js      # User profile + activity log
 ```
 
-## 🚀 Deploy to GitHub Pages
-
-1. Push to GitHub
-2. Go to **Settings → Pages**
-3. Set source to `main` branch, `/ (root)`
-4. Your app is live at `https://agusadhitama.github.io/itcommand`
-
 ## 🛠️ Local Development
 Just open `index.html` in your browser no build step needed!
 
