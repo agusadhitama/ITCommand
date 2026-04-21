@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ITCommand Center</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- BOOT SCREEN -->
+  <div id="boot-screen">
+    <div class="boot-content">
+      <div class="boot-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">IT</span>
+        <span class="logo-accent">CMD</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <div class="boot-log" id="boot-log"></div>
+      <div class="boot-bar"><div class="boot-progress" id="boot-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div id="app" class="hidden">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-icon">⌗</span>
+        <div>
+          <div class="brand-name">ITCommand</div>
+          <div class="brand-sub">Support Center v1.0</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">MAIN</div>
+        <a class="nav-item active" data-page="dashboard" onclick="navigate('dashboard')">
+          <span class="nav-icon">◈</span> Dashboard
+        </a>
+        <a class="nav-item" data-page="tickets" onclick="navigate('tickets')">
+          <span class="nav-icon">◉</span> Tickets
+          <span class="badge" id="badge-tickets">0</span>
+        </a>
+        <a class="nav-item" data-page="inventory" onclick="navigate('inventory')">
+          <span class="nav-icon">◫</span> Device Inventory
+        </a>
+
+        <div class="nav-label">TOOLS</div>
+        <a class="nav-item" data-page="wizard" onclick="navigate('wizard')">
+          <span class="nav-icon">◎</span> Troubleshoot Wizard
+        </a>
+        <a class="nav-item" data-page="analyzer" onclick="navigate('analyzer')">
+          <span class="nav-icon">◐</span> Log Analyzer
+        </a>
+        <a class="nav-item" data-page="tools" onclick="navigate('tools')">
+          <span class="nav-icon">◩</span> Quick Tools
+        </a>
+
+        <div class="nav-label">KNOWLEDGE</div>
+        <a class="nav-item" data-page="kb" onclick="navigate('kb')">
+          <span class="nav-icon">◬</span> Knowledge Base
+        </a>
+        <a class="nav-item" data-page="profile" onclick="navigate('profile')">
+          <span class="nav-icon">◯</span> My Profile
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span id="clock">--:--:--</span>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="topbar">
+        <div class="topbar-title" id="page-title">Dashboard</div>
+        <div class="topbar-right">
+          <div class="xp-bar-wrap">
+            <span class="xp-label">XP</span>
+            <div class="xp-bar"><div class="xp-fill" id="xp-fill"></div></div>
+            <span class="xp-value" id="xp-value">0</span>
+          </div>
+          <div class="level-badge" id="level-badge">Lv.1</div>
+          <div class="avatar-chip" id="avatar-name">IT Support</div>
+        </div>
+      </div>
+
+      <!-- PAGES -->
+      <div id="page-dashboard" class="page active"></div>
+      <div id="page-tickets" class="page"></div>
+      <div id="page-inventory" class="page"></div>
+      <div id="page-wizard" class="page"></div>
+      <div id="page-analyzer" class="page"></div>
+      <div id="page-tools" class="page"></div>
+      <div id="page-kb" class="page"></div>
+      <div id="page-profile" class="page"></div>
+    </main>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <script src="modules/storage.js"></script>
+  <script src="modules/gamification.js"></script>
+  <script src="modules/tickets.js"></script>
+  <script src="modules/inventory.js"></script>
+  <script src="modules/wizard.js"></script>
+  <script src="modules/analyzer.js"></script>
+  <script src="modules/tools.js"></script>
+  <script src="modules/kb.js"></script>
+  <script src="modules/profile.js"></script>
+  <script src="modules/dashboard.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
